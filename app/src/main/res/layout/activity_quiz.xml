@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="100dp"
+    tools:context="ck.bestgameintheworld.QuizActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="30dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/question"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/answer1"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/answer2"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/answer3"/>
+
+    <Chronometer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/answer4"
+        android:layout_marginTop="50dp"
+        android:id="@+id/timer"/>
+</RelativeLayout>

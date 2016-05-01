@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ck.bestgameintheworld.NewQuestion_Activity">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/newquestiontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Új kérdés hozzáadása"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kérdés szövege..."
+        android:layout_below="@id/newquestiontitle"
+        android:id="@+id/newquestion"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Első válasz lehetőség..."
+        android:layout_below="@id/newquestion"
+        android:id="@+id/newanswer1"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Második válasz lehetőség..."
+        android:layout_below="@id/newanswer1"
+        android:id="@+id/newanswer2"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harmadik válasz lehetőség..."
+        android:layout_below="@id/newanswer2"
+        android:id="@+id/newanswer3"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Negyedik válasz lehetőség..."
+        android:layout_below="@id/newanswer3"
+        android:id="@+id/newanswer4"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pickertext"
+        android:text="Helyes válasz sorszáma:"
+        android:layout_below="@id/newanswer4"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/pickertext"
+        android:layout_below="@id/newanswer4"
+        android:id="@+id/picker">
+    </NumberPicker>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/add"
+        android:layout_below="@+id/picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Hozzáadás"/>
+
+</RelativeLayout>
